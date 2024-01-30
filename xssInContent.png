@@ -1,1 +1,1 @@
-<iframe onload=print()>
+<script>print()</script>
